@@ -14,20 +14,16 @@ const App = () => {
         >
           <div className="container">
             <div className="hero-content w-[450px] leading-[60px] pt-[180px]">
-              <p className="text-[28px] font-tank-medium text-white">
+              <h2 className="text-[28px] font-tank-medium text-white">
                 Улучшим любые условия
-              </p>
+              </h2>
               <p className="text-[60px] font-tank-bold text-white">TANK 500</p>
               <p className="text-[28px] font-tank-medium text-white">
                 Осталось всего 5 автомобилей!
               </p>
-              <Button className="px-[30px] py-[26px] flex items-center gap-1">
-                <p className="text-[16px] font-tank-medium">
-                  Получить предложение
-                </p>
-                <span className="text-2xl">
-                  <MdNavigateNext />
-                </span>
+              <Button className="px-[30px] py-[26px] flex items-center gap-1 text-[16px] font-tank-medium">
+                Получить предложение
+                <MdNavigateNext className="text-2xl" />
               </Button>
             </div>
           </div>
