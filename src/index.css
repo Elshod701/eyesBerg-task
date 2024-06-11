@@ -20,3 +20,13 @@ body {
   font-family: Tank-light;
   src: url("/src/assets/fonts/TT\ TANK\ Light.ttf");
 }
+
+#online::before {
+  content: "";
+  background: #00d154;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
