@@ -69,7 +69,10 @@ const App = () => {
     <>
       <Header />
       <main>
-        <section id="hero" className="h-[700px]">
+        <section
+          id="hero"
+          className="h-[700px] bg-[url('./assets/images/hero-bg.png')] object-cover object-center bg-no-repeat"
+        >
           <div className="container">
             <div className="hero-content w-[450px] leading-[60px] pt-[180px]">
               <h2 className="text-[28px] font-tank-medium text-white">
@@ -350,7 +353,10 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section id="form-section" className="h-[400px]">
+        <section
+          id="form-section"
+          className="h-[400px] bg-[url('./assets/images/application-bg.png')] object-cover object-center bg-no-repeat"
+        >
           <div className="container pt-[80px]">
             <form className="content w-[571px] ">
               <h1 className="font-tank-medium text-[40px] text-white w-[371px] leading-10 uppercase">
