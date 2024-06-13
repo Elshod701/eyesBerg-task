@@ -31,14 +31,14 @@ body {
   margin-right: 5px;
 }
 #form-section {
-  background-image: url(./assets/images/application-bg.png);
+  background-image: url("./assets/images/application-bg.png");
   object-fit: cover;
   background-repeat: no-repeat;
   object-position: center;
 }
 
 #hero {
-  background-image: url(./assets/images/hero-bg.png);
+  background-image: url("./assets/images/hero-bg.png");
   object-fit: cover;
   background-repeat: no-repeat;
   object-position: center;
