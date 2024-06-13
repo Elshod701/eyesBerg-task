@@ -8,17 +8,17 @@ body {
 
 @font-face {
   font-family: "Tank-bold";
-  src: url("/src/assets/fonts/TT\ TANK\ Bold.ttf");
+  src: url("/src/assets/fonts/TankBold.ttf");
 }
 
 @font-face {
   font-family: "Tank-medium";
-  src: url("/src/assets/fonts/TT\ TANK\ Medium.ttf");
+  src: url("/src/assets/fonts/TankMedium.ttf");
 }
 
 @font-face {
   font-family: Tank-light;
-  src: url("/src/assets/fonts/TT\ TANK\ Light.ttf");
+  src: url("/src/assets/fonts/TankLight.ttf");
 }
 
 #online::before {
@@ -30,4 +30,3 @@ body {
   display: inline-block;
   margin-right: 5px;
 }
-
