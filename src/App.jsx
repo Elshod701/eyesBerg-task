@@ -21,6 +21,9 @@ import tank3 from "@/assets/images/tank3.png";
 import tank4 from "@/assets/images/tank4.png";
 import tank5 from "@/assets/images/tank5.png";
 import FrontCar from "@/assets/images/front-car.png";
+import tatyana from "@/assets/images/tatyana.png";
+import location from "./assets/images/location.png";
+import InfoCarCard from "./components/info-car-card/info-car-card";
 
 import {
   Select,
@@ -29,7 +32,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import InfoCarCard from "./components/info-car-card/info-car-card";
+import Footer from "./components/footer/footer";
 
 const App = () => {
   function countdownTimer(days) {
@@ -66,10 +69,7 @@ const App = () => {
     <>
       <Header />
       <main>
-        <section
-          id="hero"
-          className="bg-[url('../src/assets/images/hero-bg.png')] bg-cover bg-no-repeat bg-center h-[700px]"
-        >
+        <section id="hero" className="h-[700px]">
           <div className="container">
             <div className="hero-content w-[450px] leading-[60px] pt-[180px]">
               <h2 className="text-[28px] font-tank-medium text-white">
@@ -86,7 +86,6 @@ const App = () => {
             </div>
           </div>
         </section>
-
         <section className="pt-5">
           <div className="container">
             <div className="bg-[#252C2C] py-8 px-10 flex items-center justify-between rounded-[10px]">
@@ -147,7 +146,6 @@ const App = () => {
             </div>
           </div>
         </section>
-
         <section className="bg-[#1C2121] h-[878px] pt-[80px]">
           <div className="container">
             <div className="flex items-center justify-between">
@@ -206,7 +204,6 @@ const App = () => {
             </div>
           </div>
         </section>
-
         <section className="bg-[#252C2C] h-[878px] pt-[80px]">
           <div className="container">
             <div className="flex items-center justify-between">
@@ -265,7 +262,6 @@ const App = () => {
             </div>
           </div>
         </section>
-
         <section>
           <div className="container">
             <h1 className="text-[40px] font-tank-bold text-white mt-[100px] mb-[40px] text-center">
@@ -339,7 +335,6 @@ const App = () => {
             )}
           </div>
         </section>
-
         <section className="mt-[160px] mb-[80px]">
           <div className="container flex items-center justify-center">
             <div className="banner flex items-center gap-10 mx-auto w-[1150px]">
@@ -348,15 +343,14 @@ const App = () => {
                 <h1 className="text-[40px] font-tank-bold text-white mb-2">
                   ОБМЕН ПО TRADE-IN НА ВЫГОДНЫХ УСЛОВИЯХ
                 </h1>
-                <Button variant="default">
+                <Button variant="default" className="px-10 py-6">
                   Отправить заявку <MdNavigateNext />
                 </Button>
               </div>
             </div>
           </div>
         </section>
-
-        <section className="bg-[url('/src/assets/images/application-bg.png')] object-cover object-center h-[400px]">
+        <section id="form-section" className="h-[400px]">
           <div className="container pt-[80px]">
             <form className="content w-[571px] ">
               <h1 className="font-tank-medium text-[40px] text-white w-[371px] leading-10 uppercase">
@@ -374,7 +368,7 @@ const App = () => {
                 type="text"
                 placeholder="+7 (___) ___-__-__"
               />
-              <Button type="submit" variant="default" className="py-6 px-9">
+              <Button type="submit" variant="default" className="px-10 py-6">
                 Отправить заявку <MdNavigateNext />
               </Button>
               <div className="flex items-center gap-2 text-white mt-4">
@@ -384,7 +378,42 @@ const App = () => {
             </form>
           </div>
         </section>
+        <section>
+          <div className="container pt-[80px]">
+            <div className="reciever-banner h-[240px] bg-[#1C2121] rounded-lg p-10 flex items-center justify-between">
+              <div className="left w-[524px]">
+                <h1 className="text-white text-[30px] font-tank-bold leading-[120%] uppercase pb-10">
+                  Индивидуальное предложение для корпоративных клиентов
+                </h1>
+                <Button
+                  variant="default"
+                  className="flex items-center px-10 py-6"
+                >
+                  Отправить заявку
+                  <MdNavigateNext />
+                </Button>
+              </div>
+              <div className="right flex items-center gap-5">
+                <img src={tatyana} alt="user" />
+                <div>
+                  <h3 className="text-[28px] font-tank-bold text-white">
+                    Татьяна Санникова
+                  </h3>
+                  <p className="text-[#939697] w-[200px]">
+                    Отдел корпоративных продаж АВТОРУСЬ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="mt-[80px]">
+          <div className="container">
+            <img src={location} alt="" />
+          </div>
+        </section>
       </main>
+      <Footer />
     </>
   );
 };
