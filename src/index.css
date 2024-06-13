@@ -30,3 +30,55 @@ body {
   display: inline-block;
   margin-right: 5px;
 }
+#tank-red-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ff0000;
+}
+#tank-gray-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #6e6e6e;
+}
+#tank-orange-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ff4d00;
+}
+#tank-black-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f0000;
+}
+
+#tank2-bronze-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #836d4f;
+}
+#tank2-white-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+}
+#tank2-black-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+}
+#tank2-gray-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #6e6e6e;
+}
+.active {
+  border: 3px solid rgb(255, 255, 255);
+}
