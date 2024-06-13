@@ -47,10 +47,10 @@ const App = () => {
       const secondsRemaining = totalSeconds % 60;
 
       timerElement.innerHTML = `
-      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${daysRemaining}<p/> <span>дня<span/>  </div> <span style="font-family: 'Tank-bold'; font-size: 30px">:</span>
-      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${hoursRemaining}<p/> <span>часов<span/>  </div>  <span style="font-family: 'Tank-bold'; font-size: 30px">:</span>
-      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${minutesRemaining}<p/> <span>минут<span/>  </div>  <span style="font-family: 'Tank-bold'; font-size: 30px">:</span>
-      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${secondsRemaining}<p/> <span>секунд<span/>  </div> `;
+      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${daysRemaining}</p> <span>дня<span/>  </div> <span style="font-family: 'Tank-bold'; font-size: 30px">:</span>
+      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${hoursRemaining}</p> <span>часов<span/>  </div>  <span style="font-family: 'Tank-bold'; font-size: 30px">:</span>
+      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${minutesRemaining}</p> <span>минут<span/>  </div>  <span style="font-family: 'Tank-bold'; font-size: 30px">:</span>
+      <div style="border: solid 3px #FE8630; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction:column"><p style="font-family: 'Tank-bold'; font-size: 30px">${secondsRemaining}</p> <span>секунд<span/>  </div> `;
 
       if (totalSeconds <= 0) {
         clearInterval(timerInterval);
@@ -95,12 +95,13 @@ const App = () => {
               <h2 className="text-[30px] font-tank-bold text-white w-[330px] uppercase leading-[110%]">
                 Срок действия спецпредложения:
               </h2>
-              <p
+              <div
                 id="timer"
                 className="text-white text-center text-[14px] flex items-center gap-5 font-tank-light"
               >
-             
-              </p>
+<p style="font-family: 'Tank-bold'; font-size: 30px">${daysRemaining}</p>
+
+              </div>
               <Button className="py-6">
                 Узнать цену с выгодами
                 <MdNavigateNext className="text-2xl" />
