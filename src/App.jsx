@@ -99,7 +99,7 @@ const App = () => {
                 id="timer"
                 className="text-white text-center text-[14px] flex items-center gap-5 font-tank-light"
               >
-                loading...
+             
               </p>
               <Button className="py-6">
                 Узнать цену с выгодами
